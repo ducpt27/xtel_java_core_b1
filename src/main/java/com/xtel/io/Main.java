@@ -1,8 +1,9 @@
 package com.xtel.io;
 
-import com.xtel.io.utils.ConsoleUtils;
 import com.xtel.io.utils.FileUtils;
 import com.xtel.io.utils.NumberUtils;
+
+import java.util.Scanner;
 
 public class Main {
 
@@ -11,30 +12,23 @@ public class Main {
     private static final String FILE_PATH = SRC_PATH + "\\src\\main\\java\\com\\xtel\\io\\config\\number.txt";
 
     public static void main(String[] args) {
-        Number number = getNumberInFile(FILE_PATH);
+        String input = FileUtils.readFirtLine(FILE_PATH);
+        Number number = NumberUtils.parseDouble(input);
         if (number == null) {
             System.out.println("Không tìm được số từ file:" + FILE_PATH);
             return;
         }
-        if (!compareNumberConsole(number, 5)) {
-            System.out.println("Nhập lỗi");
-            return;
-        }
-        System.out.println("Thành công!");
-    }
 
-    private static Number getNumberInFile(String f) {
-        String input = FileUtils.readFirtLine(f);
-        return NumberUtils.parseDouble(input);
-    }
-
-    private static boolean compareNumberConsole(Number num, int round) {
-        for (int i = 0; i < round; i++) {
-            Number tmp = ConsoleUtils.getNumber();
-            if (tmp != null && tmp.equals(num)) {
-                return true;
+        Scanner scanner = new Scanner(System.in);
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Nhập số:");
+            Number tmp = NumberUtils.parseDouble(scanner.nextLine());
+            if (NumberUtils.compare(number, tmp)) {
+                System.out.println("Thành công!");
+                break;
+            } else {
+                System.out.println("Nhập sai!");
             }
         }
-        return false;
     }
 }

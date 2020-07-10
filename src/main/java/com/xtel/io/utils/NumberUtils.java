@@ -13,4 +13,14 @@ public class NumberUtils {
         }
         return null;
     }
+
+    public static boolean compare(Number n1, Number n2) {
+        if (n1 == null || n2 == null) {
+            return false;
+        }
+        if (n1.equals(n2)) {
+            return true;
+        }
+        return false;
+    }
 }
