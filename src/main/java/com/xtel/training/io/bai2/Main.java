@@ -18,6 +18,9 @@ public class Main {
         }
 
         Electric electric = new Electric(electricNum);
-        System.out.println("Tổng tiền điện:" + electric.getTotalPrice());
+        Double totalPriceElectric = electric.getTotalPrice();
+        if (totalPriceElectric != null) {
+            System.out.println("Tổng tiền điện: " + electric.getTotalPrice() + "đ");
+        }
     }
 }
