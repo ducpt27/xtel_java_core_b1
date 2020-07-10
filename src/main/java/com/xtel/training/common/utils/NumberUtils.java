@@ -1,13 +1,23 @@
-package com.xtel.training.io.bai1.utils;
+package com.xtel.training.common.utils;
 
 public class NumberUtils {
+
+    public static Integer parseInt(String s) {
+        if (s == null) return null;
+        try {
+            return Integer.parseInt(s);
+        } catch (Exception e) {
+            System.out.println("Không thể chuyển thành số!");
+        }
+        return null;
+    }
 
     public static Double parseDouble(String s) {
         if (s == null) return null;
         try {
             return Double.parseDouble(s);
         } catch (Exception e) {
-            System.out.println("Không thể chuyển chuỗi thành số!");
+            System.out.println("Không thể chuyển thành số!");
         }
         return null;
     }

@@ -1,7 +1,7 @@
 package com.xtel.training.io.bai1;
 
-import com.xtel.training.io.bai1.utils.FileUtils;
-import com.xtel.training.io.bai1.utils.NumberUtils;
+import com.xtel.training.common.utils.FileUtils;
+import com.xtel.training.common.utils.NumberUtils;
 
 import java.util.Scanner;
 
@@ -24,7 +24,7 @@ public class Main {
         boolean isEnterCorrect = false;
         for (int i = 0; i < 5; i++) {
             System.out.println("Nhập số:");
-            Number numberInConsole = NumberUtils.parseDouble(SCANNER.nextLine());
+            Double numberInConsole = NumberUtils.parseDouble(SCANNER.nextLine());
             if (NumberUtils.compare(numberConfig, numberInConsole)) {
                 isEnterCorrect = true;
                 break;

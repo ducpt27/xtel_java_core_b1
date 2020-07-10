@@ -1,4 +1,4 @@
-package com.xtel.training.io.bai1.utils;
+package com.xtel.training.common.utils;
 
 import java.io.File;
 import java.util.Scanner;
