@@ -1,4 +1,4 @@
-package com.xtel.common.utils;
+package com.xtel.training.io.bai1.utils;
 
 public class NumberUtils {
 
