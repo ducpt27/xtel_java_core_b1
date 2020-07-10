@@ -1,4 +1,4 @@
-package com.xtel.io.utils;
+package com.xtel.common.utils;
 
 import java.io.File;
 import java.util.Scanner;

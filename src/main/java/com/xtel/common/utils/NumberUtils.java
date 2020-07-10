@@ -1,6 +1,4 @@
-package com.xtel.io.utils;
-
-import java.util.Scanner;
+package com.xtel.common.utils;
 
 public class NumberUtils {
 
