@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<db>
+    <url>jdbc:mysql://localhost:3306/student_manager?useUnicode=true;characterEncoding=UTF-8;autoReconnect=true</url>
+    <user>root</user>
+    <password></password>
+    <driver>com.mysql.cj.jdbc.Driver</driver>
+</db>

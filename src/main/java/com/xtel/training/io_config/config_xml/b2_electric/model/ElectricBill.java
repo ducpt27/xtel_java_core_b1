@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-@XmlRootElement(name = "eletricPriceMilestions")
+@XmlRootElement(name = "EletricPriceMilestions")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class ElectricBill {
 
@@ -13,7 +13,7 @@ public class ElectricBill {
 
     private Double totalPrice;
 
-    @XmlElement(name = "eletricPriceMilestion")
+    @XmlElement(name = "EletricPriceMilestion")
     private List<ElectricPriceMilestone> electricPriceMilestones = null;
 
     public ElectricBill() {

@@ -3,17 +3,17 @@ package com.xtel.training.io_config.config_xml.b2_electric.model;
 
 import javax.xml.bind.annotation.*;
 
-@XmlRootElement(name = "eletricPriceMilestion")
+@XmlRootElement(name = "EletricPriceMilestion")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class ElectricPriceMilestone {
 
     @XmlAttribute(name = "id")
     private Integer id;
 
-    @XmlElement(name = "price")
+    @XmlElement(name = "Price")
     private Double price;
 
-    @XmlElement(name = "formElictricNum")
+    @XmlElement(name = "FormElictricNum")
     private Integer formElictricNum;
 
     public ElectricPriceMilestone() {
