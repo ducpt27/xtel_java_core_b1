@@ -1,4 +1,4 @@
-package com.xtel.training.io_config.compare_number.b1;
+package com.xtel.training.exercise.compare_number.b1;
 
 import com.xtel.training.common.utils.FileUtils;
 import com.xtel.training.common.utils.NumberUtils;

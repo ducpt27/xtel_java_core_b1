@@ -1,7 +1,5 @@
 package com.xtel.training.common.utils;
 
-import com.xtel.training.io_config.db.b4_student_manager.database.DBConnectorConfig;
-
 import javax.xml.bind.*;
 import java.io.File;
 import java.io.FileOutputStream;

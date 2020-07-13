@@ -1,4 +1,4 @@
-package com.xtel.training.io_config.db.b4_student_manager.database;
+package com.xtel.training.exercise.db.b4_student_manager.database;
 
 import com.xtel.training.common.utils.XMLUtils;
 

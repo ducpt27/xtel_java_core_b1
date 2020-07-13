@@ -1,4 +1,4 @@
-package com.xtel.training.io_config.sort.b3_quicksort;
+package com.xtel.training.exercise.sort.b3_quicksort;
 
 import com.xtel.training.common.utils.*;
 

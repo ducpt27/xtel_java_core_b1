@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class NumberUtils {
 
-    public static Integer[] parseInt(String[] array) {
+    public static Integer[] parseInt(String[] array) throws NumberFormatException {
         ArrayList<Integer> arr = new ArrayList<>();
         for (String str : array) {
             Integer number = NumberUtils.parseInt(str);
@@ -15,24 +15,14 @@ public class NumberUtils {
         return numbers;
     }
 
-    public static Integer parseInt(String str) {
+    public static Integer parseInt(String str) throws NumberFormatException {
         if (str == null) return null;
-        try {
-            return Integer.parseInt(str);
-        } catch (Exception e) {
-            System.out.println("Không thể chuyển thành số!");
-        }
-        return null;
+        return Integer.parseInt(str);
     }
 
-    public static Double parseDouble(String str) {
+    public static Double parseDouble(String str) throws NumberFormatException {
         if (str == null) return null;
-        try {
-            return Double.parseDouble(str);
-        } catch (Exception e) {
-            System.out.println("Không thể chuyển thành số!");
-        }
-        return null;
+        return Double.parseDouble(str);
     }
 
     public static boolean compare(Number n1, Number n2) {

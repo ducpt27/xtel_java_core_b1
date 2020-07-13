@@ -1,4 +1,4 @@
-package com.xtel.training.io_config.config_xml.b2_electric.model;
+package com.xtel.training.exercise.config_xml.b2_electric.model;
 
 import javax.xml.bind.annotation.*;
 import java.util.Collections;

@@ -1,8 +1,8 @@
-package com.xtel.training.io_config.config_xml.b2_electric;
+package com.xtel.training.exercise.config_xml.b2_electric;
 
 import com.xtel.training.common.utils.NumberUtils;
 import com.xtel.training.common.utils.XMLUtils;
-import com.xtel.training.io_config.config_xml.b2_electric.model.ElectricBill;
+import com.xtel.training.exercise.config_xml.b2_electric.model.ElectricBill;
 
 import java.util.Scanner;
 
@@ -38,6 +38,5 @@ public class BaiTap2 {
         if (electricTotalPrice != null) {
             System.out.println("Tổng tiền điện: " + electricTotalPrice + "đ");
         }
-        electricBill.getTotalPrice();
     }
 }

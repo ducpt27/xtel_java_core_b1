@@ -1,3 +1,3 @@
 Manifest-Version: 1.0
-Main-Class: com.xtel.training.io_config.compare_number.b1.BaiTap1
+Main-Class: com.xtel.training.exercise.compare_number.b1.BaiTap1
 
