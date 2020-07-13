@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<eletricPriceMilestions>
+    <eletricPriceMilestion id="1">
+        <price>1000.0</price>
+        <formElictricNum>0</formElictricNum>
+    </eletricPriceMilestion>
+    <eletricPriceMilestion id="2">
+        <price>1500.0</price>
+        <formElictricNum>100</formElictricNum>
+    </eletricPriceMilestion>
+    <eletricPriceMilestion id="3">
+        <price>2000.0</price>
+        <formElictricNum>150</formElictricNum>
+    </eletricPriceMilestion>
+</eletricPriceMilestions>

@@ -1,21 +1,21 @@
-package com.xtel.training.io.bai1;
+package com.xtel.training.io_config.compare_number.b1;
 
 import com.xtel.training.common.utils.FileUtils;
 import com.xtel.training.common.utils.NumberUtils;
 
 import java.util.Scanner;
 
-public class Main {
+public class BaiTap1 {
 
     //Đường dẫn thư mục dự án
-    private static String SRC_PATH = "E:\\1. Java Core\\xtel_java_core_b1\\";
+    private static String SRC_PATH = System.getProperty("user.dir");
     //Đường dẫn file config
-    private static String FILE_PATH = SRC_PATH + "src\\main\\java\\com\\xtel\\training\\io\\bai1\\config\\number.txt";
+    private static String FILE_PATH = SRC_PATH + "\\config\\number.txt";
 
     private static Scanner SCANNER = new Scanner(System.in);
 
     public static void main(String[] args) {
-        Number numberConfig = NumberUtils.parseDouble(FileUtils.readFirtLine(FILE_PATH));
+        Number numberConfig = NumberUtils.parseDouble(FileUtils.readLine(FILE_PATH, 0));
         if (numberConfig == null) {
             System.out.println("Không tìm được số từ file:" + FILE_PATH);
             return;
