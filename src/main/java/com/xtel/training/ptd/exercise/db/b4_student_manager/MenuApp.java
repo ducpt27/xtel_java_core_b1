@@ -12,8 +12,6 @@ import java.util.Scanner;
 
 public class MenuApp {
 
-    protected static final Logger logger = Logger.getLogger(MenuApp.class);
-
     public static final Scanner SCANNER = new Scanner(System.in);
 
     static DbModule dbModule = new DbModule();
@@ -28,7 +26,6 @@ public class MenuApp {
             try {
                 choose = NumberUtils.parseInt(SCANNER.nextLine());
             } catch (Exception e) {
-                logger.error(e.getMessage(), e);
                 choose = 0;
             }
             if (choose == null) choose = 0;
@@ -52,7 +49,7 @@ public class MenuApp {
             dbModule.execute(dbStudentNameExistCmd);
             return dbStudentNameExistCmd.isNameIsExist();
         } catch (Exception e) {
-            logger.error(e.getMessage(), e);
+            e.printStackTrace();
         }
         return true;
     }
@@ -62,7 +59,7 @@ public class MenuApp {
         try {
             dbModule.execute(dbStudentInsertCmd);
         } catch (Exception e) {
-            logger.error(e.getMessage(), e);
+            e.printStackTrace();
         }
     }
 
@@ -87,7 +84,6 @@ public class MenuApp {
                 Integer var1 = NumberUtils.parseInt(SCANNER.nextLine());
                 if (var1 != null) age = var1;
             } catch (Exception e) {
-                logger.error(e.getMessage(), e);
                 System.out.println("Nhập sai!");
             }
         }
