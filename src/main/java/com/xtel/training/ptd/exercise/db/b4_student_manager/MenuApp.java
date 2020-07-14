@@ -28,7 +28,7 @@ public class MenuApp {
             try {
                 choose = NumberUtils.parseInt(SCANNER.nextLine());
             } catch (Exception e) {
-                logger.error("", e);
+                logger.error(e.getMessage(), e);
                 choose = 0;
             }
             if (choose == null) choose = 0;
@@ -52,7 +52,7 @@ public class MenuApp {
             dbModule.execute(dbStudentNameExistCmd);
             return dbStudentNameExistCmd.isNameIsExist();
         } catch (Exception e) {
-            logger.error("", e);
+            logger.error(e.getMessage(), e);
         }
         return true;
     }
@@ -62,7 +62,7 @@ public class MenuApp {
         try {
             dbModule.execute(dbStudentInsertCmd);
         } catch (Exception e) {
-            logger.error("", e);
+            logger.error(e.getMessage(), e);
         }
     }
 
@@ -87,7 +87,7 @@ public class MenuApp {
                 Integer var1 = NumberUtils.parseInt(SCANNER.nextLine());
                 if (var1 != null) age = var1;
             } catch (Exception e) {
-                logger.error("", e);
+                logger.error(e.getMessage(), e);
                 System.out.println("Nhập sai!");
             }
         }

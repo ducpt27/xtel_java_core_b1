@@ -6,8 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="xtel_training_java_core" />
         <module name="BT1" />
+        <module name="xtel_training_java_core" />
+        <module name="xtel_training_java_core_basic" />
       </profile>
     </annotationProcessing>
   </component>

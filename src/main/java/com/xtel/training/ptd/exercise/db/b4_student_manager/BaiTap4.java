@@ -12,7 +12,7 @@ public class BaiTap4 {
         try {
             dbConfig.init();
         } catch (Exception e) {
-            logger.error("", e);
+            logger.error(e.getMessage(), e);
         }
 
         MenuApp menuApp = new MenuApp();
