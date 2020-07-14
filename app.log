@@ -1,0 +1,59 @@
+2020-07-14 14:25:11 ERROR MenuApp:89 - 
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:592)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at com.xtel.training.ptd.common.utils.NumberUtils.parseInt(NumberUtils.java:20)
+	at com.xtel.training.ptd.exercise.db.b4_student_manager.MenuApp.showAddStudent(MenuApp.java:86)
+	at com.xtel.training.ptd.exercise.db.b4_student_manager.MenuApp.showAddStudent(MenuApp.java:75)
+	at com.xtel.training.ptd.exercise.db.b4_student_manager.MenuApp.show(MenuApp.java:37)
+	at com.xtel.training.ptd.exercise.db.b4_student_manager.BaiTap4.main(BaiTap4.java:20)
+2020-07-14 14:25:14 ERROR MenuApp:89 - 
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:592)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at com.xtel.training.ptd.common.utils.NumberUtils.parseInt(NumberUtils.java:20)
+	at com.xtel.training.ptd.exercise.db.b4_student_manager.MenuApp.showAddStudent(MenuApp.java:86)
+	at com.xtel.training.ptd.exercise.db.b4_student_manager.MenuApp.showAddStudent(MenuApp.java:75)
+	at com.xtel.training.ptd.exercise.db.b4_student_manager.MenuApp.show(MenuApp.java:37)
+	at com.xtel.training.ptd.exercise.db.b4_student_manager.BaiTap4.main(BaiTap4.java:20)
+2020-07-14 14:28:02 ERROR MenuApp:89 - 
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:592)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at com.xtel.training.ptd.common.utils.NumberUtils.parseInt(NumberUtils.java:20)
+	at com.xtel.training.ptd.exercise.db.b4_student_manager.MenuApp.showAddStudent(MenuApp.java:86)
+	at com.xtel.training.ptd.exercise.db.b4_student_manager.MenuApp.showAddStudent(MenuApp.java:75)
+	at com.xtel.training.ptd.exercise.db.b4_student_manager.MenuApp.show(MenuApp.java:37)
+	at com.xtel.training.ptd.exercise.db.b4_student_manager.BaiTap4.main(BaiTap4.java:20)
+2020-07-14 14:32:52 ERROR MenuApp:65 - 
+com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Out of range value for column 'age' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:970)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:387)
+	at com.xtel.training.ptd.exercise.db.b4_student_manager.db.DbModule.execute(DbModule.java:20)
+	at com.xtel.training.ptd.exercise.db.b4_student_manager.MenuApp.newStudent(MenuApp.java:63)
+	at com.xtel.training.ptd.exercise.db.b4_student_manager.MenuApp.showAddStudent(MenuApp.java:98)
+	at com.xtel.training.ptd.exercise.db.b4_student_manager.MenuApp.show(MenuApp.java:37)
+	at com.xtel.training.ptd.exercise.db.b4_student_manager.BaiTap4.main(BaiTap4.java:20)
+2020-07-14 14:34:34 ERROR MenuApp:65 - 
+com.mysql.cj.jdbc.exceptions.MysqlDataTruncation: Data truncation: Out of range value for column 'age' at row 1
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:104)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:970)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:387)
+	at com.xtel.training.ptd.exercise.db.b4_student_manager.db.DbModule.execute(DbModule.java:20)
+	at com.xtel.training.ptd.exercise.db.b4_student_manager.MenuApp.newStudent(MenuApp.java:63)
+	at com.xtel.training.ptd.exercise.db.b4_student_manager.MenuApp.showAddStudent(MenuApp.java:98)
+	at com.xtel.training.ptd.exercise.db.b4_student_manager.MenuApp.show(MenuApp.java:37)
+	at com.xtel.training.ptd.exercise.db.b4_student_manager.BaiTap4.main(BaiTap4.java:20)
+2020-07-14 14:36:50 ERROR MenuApp:90 - 
+java.lang.NumberFormatException: For input string: "đưaa"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at com.xtel.training.ptd.common.utils.NumberUtils.parseInt(NumberUtils.java:20)
+	at com.xtel.training.ptd.exercise.db.b4_student_manager.MenuApp.showAddStudent(MenuApp.java:87)
+	at com.xtel.training.ptd.exercise.db.b4_student_manager.MenuApp.show(MenuApp.java:37)
+	at com.xtel.training.ptd.exercise.db.b4_student_manager.BaiTap4.main(BaiTap4.java:20)
